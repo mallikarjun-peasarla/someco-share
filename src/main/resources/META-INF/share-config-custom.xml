@@ -12,6 +12,7 @@
             <visible>
                 <aspect name="sc:webable" />
                 <aspect name="sc:productRelated" />
+                <aspect name="cm:replaceable" />
             </visible>
 
             <!-- Aspects that a user can add. Same as "visible" if left empty -->
@@ -170,6 +171,9 @@
 
                     <!-- sc:doc -->
                     <show id="sc:relatedDocuments" />
+
+                    <!-- cm:replaceable -->
+                    <show id="cm:replaces" />
                 </field-visibility>
                 <appearance>
                     <field id="cm:name">
@@ -210,6 +214,10 @@
                     <field id="cm:sentdate" read-only="true" />
                     <field id="cm:subjectline" read-only="true" />
                     <field id="sc:relatedDocuments" label-id="assoc.sc_relatedDocuments"/>
+
+                    <field id="cm:sentdate" read-only="true" />
+                    <field id="cm:subjectline" read-only="true" />
+                    <field id="cm:replaces" label-id="assoc.cm_replaces"/>
                 </appearance>
             </form>
 
