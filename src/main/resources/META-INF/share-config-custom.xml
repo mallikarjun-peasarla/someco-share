@@ -14,6 +14,7 @@
                 <aspect name="cm:replaceable" />
                 <aspect name="sc:webable" />
                 <aspect name="sc:productRelated" />
+                <aspect name="scr:rateable" />
             </visible>
 
             <!-- Aspects that a user can add. Same as "visible" if left empty -->
@@ -552,6 +553,21 @@
                 <appearance>
                     <field id="sc:product" label-id="prop.sc_product" />
                     <field id="sc:version" label-id="prop.sc_version" />
+                </appearance>
+            </form>
+        </forms>
+    </config>
+
+    <config evaluator="aspect" condition="scr:rateable">
+        <forms>
+            <form>
+                <field-visibility>
+                    <show id="scr:averageRating" />
+                    <show id="scr:ratingCount" />
+                </field-visibility>
+                <appearance>
+                    <field id="scr:averageRating" label-id="prop.scr_averageRating" read-only="true" />
+                    <field id="scr:ratingCount" label-id="prop.scr_ratingCount" read-only="true" />
                 </appearance>
             </form>
         </forms>
