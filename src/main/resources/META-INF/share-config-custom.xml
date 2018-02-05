@@ -12,6 +12,8 @@
             <!-- Aspects that a user can see -->
             <visible>
                 <aspect name="cm:replaceable" />
+                <aspect name="sc:webable" />
+                <aspect name="sc:productRelated" />
             </visible>
 
             <!-- Aspects that a user can add. Same as "visible" if left empty -->
