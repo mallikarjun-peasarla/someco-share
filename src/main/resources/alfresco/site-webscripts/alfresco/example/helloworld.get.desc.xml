@@ -1,0 +1,6 @@
+<webscript>
+    <shortname>Hello World</shortname>
+    <description>Hello World Dashlet</description>
+    <family>dashlet</family>
+    <url>/components/dashlets/hello-world</url>
+</webscript>
