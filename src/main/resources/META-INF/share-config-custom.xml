@@ -1,5 +1,13 @@
 <alfresco-config>
 
+
+    <config>
+        <flags>
+            <client-debug>true</client-debug>
+            <client-debug-autologging>true</client-debug-autologging>
+        </flags>
+    </config>
+
     <!-- Document Library config section -->
     <config evaluator="string-compare" condition="DocumentLibrary">
         <!--
