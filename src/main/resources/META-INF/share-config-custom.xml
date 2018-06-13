@@ -921,12 +921,14 @@
             <form>
                 <field-visibility>
                     <show id="bpm:workflowDescription"/>
+                    <show id="bpm:assignee" />
                     <show id="packageItems"/>
                     <show id="transitions"/>
                 </field-visibility>
                 <appearance>
                     <set id="" appearance="title" label-id="workflow.set.general"/>
                     <set id="items" appearance="title" label-id="workflow.set.items"/>
+                    <set id="assignee" appearance="title" label-id="workflow.set.assignee" />
                     <set id="progress" appearance="title" label-id="workflow.set.task.progress"/>
                     <field id="bpm:workflowDescription" label-id="workflow.field.message">
                         <control template="/org/alfresco/components/form/controls/textarea.ftl">
@@ -934,6 +936,9 @@
                         </control>
                     </field>
                     <field id="packageItems" set="items"/>
+                    <field id="bpm:assignee"
+                           label-id="workflow.field.assign_to" set="assignee" />
+                    <field id="packageItems" set="items" />
                 </appearance>
             </form>
         </forms>
